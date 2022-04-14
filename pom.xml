@@ -23,7 +23,7 @@
   <distributionManagement>
 	<repository>
 		<id>nexus-releases</id>
-		<url>${nexus.url}/nexus/content/repositories/sample-releases/</url>
+		<url>${nexus.url}/repository/sample-releases/</url>
 	</repository>
   </distributionManagement>
   
