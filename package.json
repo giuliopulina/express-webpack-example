@@ -28,7 +28,8 @@
   "devDependencies": {
     "ejs": "^2.6.2",
     "express": "^4.17.1",
-    "webpack": "^4.39.1",
-    "webpack-cli": "^3.3.6"
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.6",
+    "dotenv-webpack": "7.1.0"
   }
 }
