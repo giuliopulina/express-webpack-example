@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.sample</groupId>
   <artifactId>express-webpack-example</artifactId>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
   <version>0.0.5-SNAPSHOT</version>
   <name>express-webpack-example</name>
   
@@ -41,6 +41,24 @@
 				<releaseProfiles>releases</releaseProfiles>
 			</configuration>
 		  </plugin>
+		
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+				<version>3.3.0</version>
+                <configuration>
+				    <descriptors>
+						<descriptor>./descriptor.xml</descriptor>
+					</descriptors>
+                </configuration>
+                <executions> 
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
 	
 	   <plugin>
 		   <groupId>com.github.eirslett</groupId>
