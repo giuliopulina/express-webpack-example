@@ -3,7 +3,7 @@
   <groupId>com.sample</groupId>
   <artifactId>express-webpack-example</artifactId>
   <packaging>pom</packaging>
-  <version>0.0.10-SNAPSHOT</version>
+  <version>0.0.10</version>
   <name>express-webpack-example</name>
   
   <properties>
@@ -17,7 +17,7 @@
   <scm>
 	<connection>scm:git:ssh://git@github.com/giuliopulina/express-webpack-example.git</connection>
 	<developerConnection>scm:git:ssh://git@github.com/giuliopulina/express-webpack-example.git</developerConnection>
-	<tag>HEAD</tag>
+	<tag>v0.0.10</tag>
   </scm>
   
   <distributionManagement>
