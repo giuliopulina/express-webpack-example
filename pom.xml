@@ -93,8 +93,8 @@
 		   <version>1.12.1</version>
 		   <configuration>
 			   <workingDirectory>./</workingDirectory>
-			   <nodeVersion>v14.19.1</nodeVersion>
-			   <npmVersion>6.14.16</npmVersion>
+			   <nodeVersion>v16.14.0</nodeVersion>
+			   <npmVersion>8.3.1</npmVersion>
 		   </configuration>
 		   <executions>
 			   <execution>
@@ -109,7 +109,7 @@
 					   <goal>npm</goal>
 				   </goals>
 				   <configuration>
-					   <arguments>install</arguments>
+					   <arguments>ci</arguments>
 				   </configuration>
 			   </execution>
 			   <execution>
