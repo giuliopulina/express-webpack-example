@@ -41,7 +41,57 @@
 				<releaseProfiles>releases</releaseProfiles>
 			</configuration>
 		  </plugin>
-		
+		  <plugin>
+			<artifactId>maven-clean-plugin</artifactId>
+			<version>3.2.0</version>
+			<configuration>
+			  <filesets>
+				<fileset>
+				  <directory>./</directory>
+				  <includes>
+					<include>dist/*.*</include>
+				  </includes>
+				  <followSymlinks>false</followSymlinks>
+				</fileset>
+			  </filesets>
+			</configuration>
+		  </plugin>
+		  
+		  <plugin>
+			<groupId>org.codehaus.mojo</groupId>
+			<artifactId>exec-maven-plugin</artifactId>
+			<executions>
+				<execution>
+				  <id>npm ci</id>
+				  <phase>generate-sources</phase>
+				  <goals>
+					<goal>exec</goal>
+				  </goals>
+				  <configuration>
+					<executable>npm</executable>
+					<arguments>
+					  <argument>ci</argument>
+					</arguments>
+				  </configuration>
+				</execution>
+		  
+				<execution>
+				  <id>npm run build</id>
+				  <phase>generate-sources</phase>
+				  <goals>
+					<goal>exec</goal>
+				  </goals>
+				  <configuration>
+					<executable>npm</executable>
+					<arguments>
+					  <argument>run</argument>
+					  <argument>build</argument>
+					</arguments>
+				  </configuration>
+				</execution>
+			</executions>
+		  </plugin>
+			
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
 				<version>3.3.0</version>
